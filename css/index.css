@@ -584,10 +584,7 @@ main{
   transition: transform .3s .2s;
 }
 
-
-
 /* END MODAL */
-
 
 /* START PRODUCTS */
 
@@ -601,7 +598,6 @@ main{
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 
 /* END PRODUCTS */
 
