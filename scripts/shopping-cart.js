@@ -1,19 +1,19 @@
 const iconShopping = document.querySelector(".icon__shopping");
-const shopping = document.querySelector(".shopping");
-const backgroundShopping = document.querySelector(".shopping__background");
+const shopping2 = document.querySelector(".shopping");
+const backgroundShopping2 = document.querySelector(".shopping__background");
 
 iconShopping.addEventListener("click", () => {
-  shopping.classList.toggle("shopping--show");
-  backgroundShopping.classList.toggle("shopping--show");
+  shopping2.classList.toggle("shopping--show");
+  backgroundShopping2.classList.toggle("shopping--show");
 });
 
-backgroundShopping.addEventListener("click", (e) => {
+backgroundShopping2.addEventListener("click", (e) => {
   if (
-    shopping.classList.contains("shopping--show") &&
-    e.target != shopping
+    shopping2.classList.contains("shopping--show") &&
+    e.target != shopping2
 
   ) {
-    shopping.classList.toggle("shopping--show");
-    backgroundShopping.classList.toggle("shopping--show");
+    shopping2.classList.toggle("shopping--show");
+    backgroundShopping2.classList.toggle("shopping--show");
   }
 });

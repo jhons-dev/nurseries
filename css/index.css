@@ -33,7 +33,7 @@ input[type="text"] {
 
 
 .container{
-
+  
 }
 
 /* START HEADER */
@@ -266,14 +266,14 @@ input[type="text"] {
   width: 100%;
   height: 100vh;
   z-index: 2;
-  transition: transform 0.6s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   transform: translateY(-120vh);
   background-color: #1b370360;
 }
 
 .shopping--show{
   scale: 1;
-    transform: translateY(0vh);
+  transform: translateY(0vh);
   
 }
 
@@ -535,9 +535,8 @@ main{
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  transform: scale(0);
+  transform: translateX(-120vw);
   background-color: #1b370360;
-  transition: transform 0.9s ease-in-out;
 }
 
 .modal__info{
@@ -581,10 +580,8 @@ main{
   z-index: 2;
   top: 0;
   left: 0;
+  transform: translateX(0);
   transition: transform .3s .2s;
-  transform: scale(1);
-  opacity: 1;
-  visibility: visible;
 }
 
 
