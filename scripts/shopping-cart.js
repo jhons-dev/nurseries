@@ -1,4 +1,4 @@
-const iconShopping = document.querySelector(".icon__shopping");
+/* const iconShopping = document.querySelector(".icon__shopping");
 const shopping2 = document.querySelector(".shopping");
 const backgroundShopping2 = document.querySelector(".shopping__background");
 
@@ -17,3 +17,4 @@ backgroundShopping2.addEventListener("click", (e) => {
     backgroundShopping2.classList.toggle("shopping--show");
   }
 });
+ */
