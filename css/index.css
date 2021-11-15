@@ -328,6 +328,10 @@ main{
   margin: 10px 0;
 }
 
+.swiper-wrapper{
+  margin-bottom: 10px;
+}
+
 .carousel__slide {
   width: 100%;
   padding: 20px 10px;
@@ -473,15 +477,15 @@ main{
 }
 
 .category__options{
-  margin-top: 10px;
+  margin: 10px 0px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
+  column-gap: 10px;
+  row-gap: 15px;
 }
 
 .option__event{
   padding: 5px;
-  margin-bottom: 10px;
   grid-column: 1 / 3;
   display: flex;
   justify-content: space-around;
@@ -556,16 +560,17 @@ main{
   cursor: pointer;
 }
 
+
 .info__img{
   grid-column: 1/ 7;
-  width: 200px;
+  height: 180px;
   margin: 20px;
   justify-self: center;
 }
 
 .info__paragraph{
   grid-column: 1/ 7;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .modal--show{
