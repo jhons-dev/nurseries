@@ -1,4 +1,4 @@
-const url = "/../data.json";
+const url = "https://jhons-dev.github.io/nurseries/data.json";
 
 fetch(url)
   .then((res) => res.json())
