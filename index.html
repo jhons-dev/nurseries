@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>nurseries</title>
     <link rel="stylesheet" href="css/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
@@ -36,11 +37,7 @@
         <div class="shopping">
           <h2 class="shopping__title">Carrito de compras</h2>
           <div class="shopping__item">
-            <img
-              src="images/cactus-1051x700.png"
-              alt=""
-              class="item__image"
-            />
+            <img src="images/cactus-1051x700.png" alt="" class="item__image" />
             <div class="item__element">
               <p>Violeta Africana</p>
               <img src="images/icons/close.svg" alt="" />
@@ -51,11 +48,7 @@
             </div>
           </div>
           <div class="shopping__item">
-            <img
-              src="images/cactus-1051x700.png"
-              alt=""
-              class="item__image"
-            />
+            <img src="images/cactus-1051x700.png" alt="" class="item__image" />
             <div class="item__element">
               <p>Violeta Africana</p>
               <img src="images/icons/close.svg" alt="" />
@@ -148,7 +141,7 @@
         </div>
       </header>
       <div class="shopping__background"></div>
-      <main>
+      <main id="container">
         <div class="search">
           <img
             class="search__icon"
@@ -197,14 +190,137 @@
           <p class="title">Promociones</p>
           <div class="offers__carousel swiper-container">
             <div class="swiper-wrapper products-offers">
-
+              <div class="offers__card swiper-slide">
+                <div class="card__images">
+                  <img
+                    class="image__product"
+                    src="images/suculenta.jpg"
+                    alt="suculenta"
+                  />
+                  <img
+                    src="images/alcaplant.png"
+                    alt="logo-alcaplant"
+                    class="image__bushiness"
+                  />
+                  <div class="desc">
+                    <p>%40</p>
+                  </div>
+                </div>
+                <p class="offers__product">Suculentas #23</p>
+                <p class="offers__price">$30.000</p>
+                <div class="offers__icons">
+                  <img
+                    src="images/icons/heart.svg"
+                    alt="icon-home"
+                    class="icon-heart__offers"
+                  />
+                  <img
+                    src="images/icons/shopping_cart.svg"
+                    alt="icon-shopping-cart"
+                    class="icon-shopping__offers"
+                  />
+                </div>
+              </div>
+              <div class="offers__card swiper-slide">
+                <div class="card__images">
+                  <img
+                    class="image__product"
+                    src="images/cattleya-700x467.png"
+                    alt="suculenta"
+                  />
+                  <img
+                    src="images/verdeagranel.png"
+                    alt="logo-alcaplant"
+                    class="image__bushiness"
+                  />
+                  <div class="desc">
+                    <p>%30</p>
+                  </div>
+                </div>
+                <p class="offers__product">Orquídea cattle.</p>
+                <p class="offers__price">$20.000</p>
+                <div class="offers__icons">
+                  <img
+                    src="images/icons/heart.svg"
+                    alt="icon-home"
+                    class="icon-heart__offers"
+                  />
+                  <img
+                    src="images/icons/shopping_cart.svg"
+                    alt="icon-shopping-cart"
+                    class="icon-shopping__offers"
+                  />
+                </div>
+              </div>
+              <div class="offers__card swiper-slide">
+                <div class="card__images">
+                  <img
+                    class="image__product"
+                    src="images/flower-rose-700x443.png"
+                    alt="suculenta"
+                  />
+                  <img
+                    src="images/viveroflor.png"
+                    alt="logo-alcaplant"
+                    class="image__bushiness"
+                  />
+                  <div class="desc">
+                    <p>%50</p>
+                  </div>
+                </div>
+                <p class="offers__product">Flores en maceta</p>
+                <p class="offers__price">$15.000</p>
+                <div class="offers__icons">
+                  <img
+                    src="images/icons/heart.svg"
+                    alt="icon-home"
+                    class="icon-heart__offers"
+                  />
+                  <img
+                    src="images/icons/shopping_cart.svg"
+                    alt="icon-shopping-cart"
+                    class="icon-shopping__offers"
+                  />
+                </div>
+              </div>
+              <div class="offers__card swiper-slide">
+                <div class="card__images">
+                  <img
+                    class="image__product"
+                    src="images/orquidea-blanca-700-923.png"
+                    alt="suculenta"
+                  />
+                  <img
+                    src="images/viverospangola.png"
+                    alt="logo-alcaplant"
+                    class="image__bushiness"
+                  />
+                  <div class="desc">
+                    <p>%20</p>
+                  </div>
+                </div>
+                <p class="offers__product">Orquídea blanca</p>
+                <p class="offers__price">$35.000</p>
+                <div class="offers__icons">
+                  <img
+                    src="images/icons/heart.svg"
+                    alt="icon-home"
+                    class="icon-heart__offers"
+                  />
+                  <img
+                    src="images/icons/shopping_cart.svg"
+                    alt="icon-shopping-cart"
+                    class="icon-shopping__offers"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </setion>
         <section class="category">
           <h2 class="title">Categorias</h2>
           <div class="category__options">
-            <a class="option__event" href="#">
+            <a class="option__event" href="#" id="btnorchids">
               <img
                 class="event__icon"
                 src="images/icons/orchid.svg"
@@ -242,23 +358,188 @@
           </div>
         </section>
         <div class="modal">
-          <div class="modal__info">
-
+          <div class="modal__info"></div>
+        </div>
+        <section class="products">
+          <h2 class="title">Más productos</h2>
+          <div class="products__items">
+            <div class="offers__card">
+              <div class="card__images">
+                <img
+                  class="image__product"
+                  src="images/cactus-1051x700.png"
+                  alt="suculenta"
+                />
+                <img
+                  src="images/casa-del-hortelano.png"
+                  alt="logo-alcaplant"
+                  class="image__bushiness"
+                />
+              </div>
+              <p class="offers__product">Cactus #12</p>
+              <p class="offers__price">$10.000</p>
+              <div class="offers__icons">
+                <img
+                  src="images/icons/heart.svg"
+                  alt="icon-home"
+                  class="icon-heart__offers"
+                />
+                <img
+                  src="images/icons/shopping_cart.svg"
+                  alt="icon-shopping-cart"
+                  class="icon-shopping__offers"
+                />
+              </div>
+            </div>
+            <div class="offers__card">
+              <div class="card__images">
+                <img
+                  class="image__product"
+                  src="images/cymbidiums-1000x726.png"
+                  alt="suculenta"
+                />
+                <img
+                  src="images/verdeagranel.png"
+                  alt="logo-alcaplant"
+                  class="image__bushiness"
+                />
+              </div>
+              <p class="offers__product">Cymbidiums</p>
+              <p class="offers__price">$20.000</p>
+              <div class="offers__icons">
+                <img
+                  src="images/icons/heart.svg"
+                  alt="icon-home"
+                  class="icon-heart__offers"
+                />
+                <img
+                  src="images/icons/shopping_cart.svg"
+                  alt="icon-shopping-cart"
+                  class="icon-shopping__offers"
+                />
+              </div>
+            </div>
+            <div class="offers__card">
+              <div class="card__images">
+                <img
+                  class="image__product"
+                  src="images/planta-700x476.png"
+                  alt="suculenta"
+                />
+                <img
+                  src="images/alcaplant.png"
+                  alt="logo-alcaplant"
+                  class="image__bushiness"
+                />
+              </div>
+              <p class="offers__product">Planta #20</p>
+              <p class="offers__price">$25.000</p>
+              <div class="offers__icons">
+                <img
+                  src="images/icons/heart.svg"
+                  alt="icon-home"
+                  class="icon-heart__offers"
+                />
+                <img
+                  src="images/icons/shopping_cart.svg"
+                  alt="icon-shopping-cart"
+                  class="icon-shopping__offers"
+                />
+              </div>
+            </div>
+            <div class="offers__card">
+              <div class="card__images">
+                <img
+                  class="image__product"
+                  src="images/plantas-morada-700x640.png"
+                  alt="suculenta"
+                />
+                <img
+                  src="images/viveroflor.png"
+                  alt="logo-alcaplant"
+                  class="image__bushiness"
+                />
+              </div>
+              <p class="offers__product">Planta morada</p>
+              <p class="offers__price">$32.000</p>
+              <div class="offers__icons">
+                <img
+                  src="images/icons/heart.svg"
+                  alt="icon-home"
+                  class="icon-heart__offers"
+                />
+                <img
+                  src="images/icons/shopping_cart.svg"
+                  alt="icon-shopping-cart"
+                  class="icon-shopping__offers"
+                />
+              </div>
+            </div>
+            <div class="offers__card">
+              <div class="card__images">
+                <img
+                  class="image__product"
+                  src="images/violetas-africanas-1049x700.png"
+                  alt="suculenta"
+                />
+                <img
+                  src="images/verdeagranel.png"
+                  alt="logo-alcaplant"
+                  class="image__bushiness"
+                />
+              </div>
+              <p class="offers__product">Violetas afri.</p>
+              <p class="offers__price">$25.000</p>
+              <div class="offers__icons">
+                <img
+                  src="images/icons/heart.svg"
+                  alt="icon-home"
+                  class="icon-heart__offers"
+                />
+                <img
+                  src="images/icons/shopping_cart.svg"
+                  alt="icon-shopping-cart"
+                  class="icon-shopping__offers"
+                />
+              </div>
+            </div>
+            <div class="offers__card">
+              <div class="card__images">
+                <img
+                  class="image__product"
+                  src="images/plantas-rosa-700x394.png"
+                  alt="suculenta"
+                />
+                <img
+                  src="images/viverospangola.png"
+                  alt="logo-alcaplant"
+                  class="image__bushiness"
+                />
+              </div>
+              <p class="offers__product">Planta rosa</p>
+              <p class="offers__price">$32.000</p>
+              <div class="offers__icons">
+                <img
+                  src="images/icons/heart.svg"
+                  alt="icon-home"
+                  class="icon-heart__offers"
+                />
+                <img
+                  src="images/icons/shopping_cart.svg"
+                  alt="icon-shopping-cart"
+                  class="icon-shopping__offers"
+                />
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
       </main>
-      <section class="products">
-        <h2 class="title">Más productos</h2>
-        <div class="products__items">
-          
-        </div>
-      </section>
     </div>
+    <script src="scripts/pages.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/shopping-cart.js"></script>
     <script src="scripts/modal.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="scripts/f-swiper.js"></script>
-    <script src="scripts/load-products.js"></script>
   </body>
 </html>
