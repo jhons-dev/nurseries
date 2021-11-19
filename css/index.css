@@ -138,7 +138,7 @@
   flex-wrap: wrap;
   z-index: 3;
   transform: scale(0);
-  transition: transform .3s .2s;
+  transition: transform .1s .1s;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: var(--shadow);
@@ -237,9 +237,11 @@
   transition: transform 0.3s ease-in-out;
   transform: translateY(-120vh);
   background-color: #1b370360;
+  opacity: 0;
 }
 
 .shopping--show{
+  opacity: 1;
   scale: 1;
   transform: translateY(0vh);
 }
